@@ -1,0 +1,142 @@
+.menu{display:block;  margin:0 0 -26px 0;  background-color:#de462a; }
+ 
+.menu li{display: inline-block;
+position: relative;
+z-index:100; }
+ 
+.menu li a {font-weight: lighter;
+text-decoration:none;
+padding:24px 12px 24px 12px;
+display:block;
+color:#e2e2e2; font-size:18px;
+font-family: 'Roboto Condensed', sans-serif;
+ 
+}
+ 
+.menu li a:hover, .menu li:hover > a{color:#fff; background:#dd3c1e;
+}
+
+ul.menu li.current-menu-item a{
+    color:#fff; background-color:#dd3c1e;
+}
+
+
+
+
+
+/* hide the second level menu */
+.menu ul {display: none;
+margin: 0;
+padding: 0;
+width: 200px;
+position: absolute;
+top: 73px;
+left: 0px; z-index:99999
+  
+}
+ 
+/* display second level menu on hover */
+.menu li:hover > ul{ display: block;}
+ 
+.menu ul li {display:block;
+float: none;
+background:none;
+margin:0;
+padding:0;
+}
+ 
+.menu ul li a {font-size:16px;
+font-weight: lighter;
+display:block;
+color:#e2e2e2;padding:10px 12px 10px 12px;
+
+ background-color:#dd3c1e;}
+ 
+.menu ul li a:hover, .menu ul li:hover > a{
+background-color:#de462a;
+
+color:#e2e2e2;
+}
+
+
+/* change level 3 menu positions */
+.menu ul ul {left: 200px;
+	top: 0px;
+}
+
+
+
+.mobile-menu{display:none; color:#dd3c1e;
+
+ 
+}
+.mobile-menu:hover{
+
+text-decoration:none; color:#dd3c1e;
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+.menu{display:none; background:none }
+ 
+.mobile-menu{display:block; margin-bottom:20px; margin-top:-20px; 
+}
+ 
+nav{margin:0;
+background:none;}
+
+
+.menu{padding-left:10px; padding-bottom:25px !important;}
+ 
+.menu li{display:block;
+margin:0;}
+ 
+.menu li a {
+color:#333;
+padding:2px 0 2px 20px; font-size:15px
+}
+ 
+.menu li a:hover, .menu li:hover > a{
+background:none;
+color:#de462a;
+}
+ 
+/*level 2 and 3 - make same width as all items*/
+.menu ul {display:block;
+position:relative;
+top:0;
+left:0;
+width:100%;
+
+border-bottom: none; border-top:none; border-left: none; border-right: none;     
+
+
+}
+ 
+.menu ul ul {left:0;border: none;}
+ 
+ ul.menu li.current-menu-item a{
+  color:#de462a; background: none;
+}
+
+
+
+
+
+.menu li li a {
+color:#333;
+padding:5px 0 5px 30px ;border-top:none; background:none
+} 
+ 
+ 
+.menu ul li a:hover, .menu ul li:hover > a{
+background: none;color:#dd3c1e;
+
+}
+
+
+
+}
